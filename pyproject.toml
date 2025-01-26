@@ -1,0 +1,23 @@
+[project]
+name = "policy-eval"
+version = "0.1.0"
+description = ""
+authors = []
+dependencies = [
+    "foundry-core"
+    "foundry-systems"
+    "foundry-models"
+    "omegaconf >= 2.3",
+    "boto3 >= 1.35",
+    "wandb >= 0.17",
+    "dill >= 0.3.9"
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.pdm]
+distribution = true
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
